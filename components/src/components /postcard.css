@@ -93,10 +93,17 @@
   }
   
   .post-media {
-    user-select: none;  
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
     gap: 10px;
+    padding: 10px 0;
+  }
+
+  .post-media-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
   }
   
   .media-item {
@@ -120,5 +127,26 @@
   }
   
   .action:hover {
-    color: #3b82f6; /* Hover effect to match sidebar's active item color */
+    color: #3b82f6; 
+  }
+  
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.4);
+    border: none;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .scroll-btn.left {
+    left: 0;
+  }
+  
+  .scroll-btn.right {
+    right: 0;
   }

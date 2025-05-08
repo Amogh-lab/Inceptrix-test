@@ -1,0 +1,19 @@
+.comment-section {
+    margin-top: 10px;
+    padding: 10px;
+    background: #f9fafb;
+    border-left: 3px solid #3b82f6;
+    border-radius: 5px;
+  }
+  .comment {
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  .comment-user {
+    font-weight: 600;
+    color: #1d4ed8;
+  }
+  .comment-text {
+    margin-left: 5px;
+  }
+  

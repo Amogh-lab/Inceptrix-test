@@ -1,0 +1,19 @@
+.right-sidebar {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    width: 500px;
+    height: calc(100vh - 70px);
+    background-color: #ffffff;
+    border-left: 2.5px solid #ecebeb;
+    color: #1e3a8a;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    user-select: none;
+  }
+  
