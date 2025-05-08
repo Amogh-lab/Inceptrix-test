@@ -7,110 +7,113 @@ import SOSPopup from './components /SOSPopup';
 import RightSidebar from './components /rightsidebar';
 
 function App() {
-  // const samplePost1 = {
-  //   user: {
-  //     name: 'Robert Hammond',
-  //     avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
-  //   },
-  //   time: '20 min ago',
-  //   content:
-  //     'My wife prepared a surprise trip for me. I’m so thankful and I love her very much. Here are some of the best shots from our trip to Sri Lanka. ',
-  //   media: [
-  //     {
-  //       type: 'image',
-  //       src: 'https://images.unsplash.com/photo-1480497490787-505ec076689f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  //     },
-  //     {
-  //       type: 'image',
-  //       src: 'https://plus.unsplash.com/premium_photo-1673240367277-e1d394465b56?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  //     },
-  //   ],
-  //   likes: 4829,
-  //   comments: 6,
-  //   shares: 2,
-  //   comments: 3,
-  //   commentList: [
-  //     { user: 'Vivek', text: 'Nice explanation.' },
-  //     { user: 'Lea', text: 'Love this content!' },
-  //     { user: 'Preetham', text: 'Looks like shit !!' }
-  //   ]
-  // };
+  const samplePost1 = {
+    user: {
+      name: 'Robert Hammond', 
+      avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
+    },
+    time: '54 min ago',
+    content:
+      'A person witnesses someone openly brandishing a gun in a public place, causing immediate fear and concern for safety. They need a discreet and rapid way to report this serious threat to the authorities without escalating the situation.',
+    media: [
+      {
+        type: 'image',
+        src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1746726960/el0jukdwxfg73etru5jz.avif',
+      },
+      {
+        type: 'image',
+        src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1746726774/jpxaobuhaaakqnzbqjwf.avif',
+      },
+    ],
+    likes: 4829,
+    comments: 6,
+    shares: 2,
+    comments: 3,
+    commentList: [
+      { user: 'Vivek', text: 'Very Informative' },
+      { user: 'Lea', text: 'Very Informative' },
+      { user: 'Preetham', text: 'Very Informative' }
+    ]
+  };
 
-  // const samplePost2 = {
-  //   user: {
-  //     name: 'Rohan Gowda',
-  //     avatar: 'https://randomuser.me/api/portraits/men/31.jpg',
-  //   },
-  //   time: '20 min ago',
-  //   content:
-  //     'Space tech, or space technology, encompasses the broad range of technologies used for space exploration, satellite applications, and related activities. ',
-  //   media: [
-  //     {
-  //       type: 'image',
-  //       src: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  //     },
-  //     {
-  //       type: 'image',
-  //       src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1745405967/euva3wdtex7rnr9m47vt.jpg',
-  //     },
-  //     {
-  //       type: 'image',
-  //       src: 'https://images.unsplash.com/photo-1447433865958-f402f562b843?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  //     },
-  //   ],
-  //   likes: 2340,
-  //   comments: 6,
-  //   shares: 2,
-  //   comments: 2,
-  //   commentList: [
-  //   { user: 'Nina', text: 'Very informative.' },
-  //   { user: 'Dan', text: 'Great insights!' }
-  // ]
-  // };
+  const samplePost2 = {
+    user: {
+      name: 'Rohan Gowda',
+      avatar: 'https://randomuser.me/api/portraits/men/31.jpg',
+    },
+    time: '36 min ago',
+    content:
+      ' - - -  ',
+    media: [
+      {
+        type: 'image',
+        src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1746726977/a6j11whq7ab8bvdmxhtq.webp',
+      },
+      {
+        type: 'image',
+        src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1746726753/eyooathwn2jhg6k5kyib.png',
+      },
+      {
+        type: 'image',
+        src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1746726784/ofoujqwrdubfehjyg4hg.webp',
+      },
+    ],
+    likes: 2340,
+    comments: 6,
+    shares: 2,
+    comments: 2,
+    commentList: [
+    { user: 'Nina', text: 'Very informative.' },
+    { user: 'Dan', text: 'Very informative' }
+  ]
+  };
 
-  // const samplePost3 = {
-  //   user: {
-  //     name: 'Shripad Maradi',
-  //     avatar: 'https://randomuser.me/api/portraits/men/69.jpg',
-  //   },
-  //   time: '20 min ago',
-  //   content:
-  //     'Technology, broadly defined, is the application of scientific knowledge for practical purposes, often involving tools and processes that change the world and enhance our lives. ',
-  //   media: [
-  //     {
-  //       type: 'video',
-  //       src: 'https://res.cloudinary.com/preethamcloud/video/upload/v1745406259/nj0syucl7fdxxjrrblr3.mp4',
-  //     },
-  //     {
-  //       type: 'image',
-  //       src: 'https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  //     },
-  //   ],
-  //   likes: 6930,
-  //   comments: 6,
-  //   shares: 2,
-  //   comments: 2,
-  //   commentList: [
-  //   { user: 'Alice', text: 'That looks amazing!' },
-  //   { user: 'John', text: 'Happy for you!' }
-  // ]
-  // };
+  const samplePost3 = {
+    user: {
+      name: 'Shripad Maradi',
+      avatar: 'https://randomuser.me/api/portraits/men/69.jpg',
+    },
+    time: '20 min ago',
+    content:
+      'While walking with her husband, a woman suddenly feels a tug and realizes her necklace has been snatched by someone who quickly ran off. They need a way to immediately report this and pinpoint the exact location.',
+    media: [
+      {
+        type: 'video',
+        src: 'https://res.cloudinary.com/preethamcloud/video/upload/v1746727705/fy0hqqd19kfb8culcqoe.mp4',
+      },
+      {
+        type: 'image',
+        src: 'https://res.cloudinary.com/preethamcloud/image/upload/v1746727780/yitkmcr5djhpqtqu1cin.png',
+      },
+    ],
+    likes: 6930,
+    comments: 6,
+    shares: 2,
+    comments: 2,
+    commentList: [
+    { user: 'Alice', text: 'very  informative' },
+    { user: 'John', text: 'very informative' }
+  ]
+  };
 
-  // const posts = [samplePost1, samplePost2, samplePost3];
+  const posts = [samplePost1, samplePost2, samplePost3];
 
-  // const sortedPosts = posts.sort((a,b)=>(b.likes-a.likes));
-  const [posts, setPosts] = useState([]);
+  const sortedPosts = posts.sort((a,b)=>(b.likes-a.likes));
 
-  useEffect(() => {
-    fetch('http://172.20.230.254:5000/posts')
-      .then(response => response.json())
-      .then(data => {
-        // Optionally sort if needed
-        const sorted = data.sort((a, b) => b.likes - a.likes);
-        setPosts(sorted);
-      })
-      .catch(error => console.error('Error fetching posts:', error));
-  }, []);
+        // database values
+
+  // const [posts, setPosts] = useState([]);
+
+  // useEffect(() => {
+  //   fetch('http://172.20.230.254:5000/posts')
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       // Optionally sort if needed
+  //       const sorted = data.sort((a, b) => b.likes - a.likes);
+  //       setPosts(sorted);
+  //     })
+  //     .catch(error => console.error('Error fetching posts:', error));
+  // }, []);
 
   return (
     <div style={{ display: 'flex' }}>
@@ -119,9 +122,19 @@ function App() {
       <RightSidebar />
       <div style={{ marginLeft: '300px', height: '90vh', overflowY: 'auto', padding: '20px', marginTop: '60px' }}>
         <UploadPost />
-          {posts.map((post, index) => (
+        
+        {/* from database */}
+
+        {/* {posts.map((post, index) => (
+          <PostCard key={index} {...post} />
+        ))} */}
+
+        {/* dummy values */}
+
+        {sortedPosts.map((post, index) => (
           <PostCard key={index} {...post} />
         ))}
+
       </div>
         <SOSPopup />
     </div>

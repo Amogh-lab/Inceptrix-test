@@ -52,7 +52,7 @@ const Navbar = () => {
 
   return (
     <div className="navbar">
-      <div className="navbar-title">SOS Sentinel</div>
+      <div className="navbar-title">HYPE ALERT</div>
       <div className="navbar-search">
         <MdSearch className="search-icon" />
         <input

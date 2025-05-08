@@ -142,6 +142,9 @@ const SOSPopup = () => {
         ) : (
           <>
             <h3 className="heading">Record Evidence</h3>
+            <p style={{ fontSize: '0.9rem', color: '#555', marginBottom: '10px' }}>
+                Choose a recording option and click "Stop Recording" before submitting.
+            </p>
             <div className="button-row">
               <button onClick={startVoiceRecording} className="button-primary">Record Voice</button>
               <button onClick={startVideoRecording} className="button-primary">Record Video</button>
@@ -158,8 +161,32 @@ const SOSPopup = () => {
               </div>
             )}
             <div className="button-row">
-              <button onClick={handleSubmit} className="button-primary">Submit</button>
-            </div>
+                <button onClick={handleSubmit} className="button-primary">Submit</button>
+                <button
+                    onClick={() => {
+                    if (voiceRecorder) voiceRecorder.stop();
+                    if (videoRecorder) videoRecorder.stop();
+                    if (voiceStream) {
+                        voiceStream.getTracks().forEach(track => track.stop());
+                        setVoiceStream(null);
+                    }
+                    if (videoStream) {
+                        videoStream.getTracks().forEach(track => track.stop());
+                        setVideoStream(null);
+                    }
+                    setVisible(false);
+                    setAccepted(false);
+                    setVoiceBlob(null);
+                    setVideoBlob(null);
+                    setPreviewURL(null);
+                    setVoiceRecorder(null);
+                    setVideoRecorder(null);
+                    setRecordingType(null);
+                    }}
+                    className="button-secondary">
+                    Cancel
+                </button>
+                </div>
           </>
         )}
       </div>
