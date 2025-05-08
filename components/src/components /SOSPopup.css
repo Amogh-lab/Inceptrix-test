@@ -1,0 +1,132 @@
+/* === General Overlay Styling === */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(48, 48, 48, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    font-family: 'Mulish', sans-serif;
+    user-select: none;
+  }
+  
+  /* === Popup Box === */
+  .popup {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border: 2px solid #d1d5db;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    color: #1e3a8a;
+    text-align: center;
+    user-select: none;
+  }
+  
+  /* === Heading === */
+  .heading {
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #1f2937;
+    user-select: none;
+  }
+  
+  /* === Paragraph === */
+  .paragraph {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #374151;
+    margin-bottom: 12px;
+    text-align: left;
+    user-select: none;
+  }
+  
+  /* === Terms Section === */
+  .terms-container {
+    margin-bottom: 10px;
+  }
+  
+  .scroll-container {
+    max-height: 150px;
+    overflow-y: auto;
+    margin-top: 10px;
+    padding-right: 5px;
+  }
+  
+  /* === Buttons === */
+  .button-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  
+  .base-button,
+  .button-primary,
+  .button-secondary,
+  .button-dark {
+    padding: 12px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+    font-weight: 500;
+    user-select: none;
+  }
+  
+  .button-primary {
+    background-color: #2563eb;
+    color: #fff;
+  }
+  
+  .button-primary:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .button-secondary {
+    background-color: #1e293b;
+    color: #fff;
+  }
+  
+  .button-secondary:hover {
+    background-color: #0f172a;
+  }
+  
+  .button-dark {
+    background-color: #111827;
+    color: #fff;
+  }
+  
+  .button-dark:hover {
+    background-color: #000;
+  }
+  
+  .base-button:active,
+  .button-primary:active,
+  .button-secondary:active,
+  .button-dark:active {
+    transform: scale(0.97);
+  }
+  
+  /* === Audio and Video Previews === */
+  .audio,
+  .video {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .video {
+    max-height: 400px;
+  }
+  

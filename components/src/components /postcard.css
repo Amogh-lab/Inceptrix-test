@@ -1,11 +1,16 @@
 .post-card {
     background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border: 2.5px solid #ecebeb;
     padding: 15px;
+    user-select: none;
+    width: 1000px;
     margin-bottom: 20px;
     font-family: 'Mulish', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .post-header {
@@ -29,7 +34,7 @@
   
   .post-user {
     font-weight: 600;
-    color: #1e3a8a;
+    color: #1a53af; 
   }
   
   .post-time {
@@ -40,7 +45,46 @@
   .post-menu {
     font-size: 20px;
     cursor: pointer;
-    color: #888;
+    
+    color: #000000;
+    transition: color 0.2s ease;
+  }
+  
+  .post-menu:hover {
+    color: #235db9;
+  }
+  
+  .post-menu-wrapper {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ecebeb;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    z-index: 10;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  
+  .dropdown-item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    user-select: none;       /* Prevents text selection */
+    cursor: pointer; 
+    color: #1e3a8a;
+    transition: background 0.2s ease;
+  }
+  
+  .dropdown-item:hover {
+    background: #f0f4ff;
   }
   
   .post-content {
@@ -49,6 +93,7 @@
   }
   
   .post-media {
+    user-select: none;  
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -65,11 +110,15 @@
     display: flex;
     gap: 20px;
     margin-top: 10px;
-    color: #4b5563;
-    font-size: 14px;
+    color: #4b5563; /* Similar to sidebar text color */
+    font-size: 16px;
   }
   
   .action {
     cursor: pointer;
+    transition: color 0.2s ease;
   }
   
+  .action:hover {
+    color: #3b82f6; /* Hover effect to match sidebar's active item color */
+  }

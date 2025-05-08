@@ -35,6 +35,7 @@
 
 .menu-item {
   display: flex;
+  user-select: none; 
   align-items: center;  color: #1e3a8a; /* deep blue */
   text-decoration: none;
   margin: 12px 0;

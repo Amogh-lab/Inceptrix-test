@@ -6,3 +6,19 @@ html, body {
   height: 100%;
   overflow: hidden; /* Prevent page scroll if sidebar is oversized */
 }
+
+div::-webkit-scrollbar {
+  display: none;
+}
+div {
+  scrollbar-width: none;
+}
+
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
